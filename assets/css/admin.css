@@ -1,0 +1,60 @@
+/**
+ * YT Custom Post Status Manager - Admin Styles
+ *
+ * @package YT_Custom_Post_Status_Manager
+ */
+
+/* Admin Settings Page */
+.yt-cpsm-container {
+	display: flex;
+	gap: 30px;
+	margin-top: 20px;
+}
+
+.yt-cpsm-form {
+	flex: 1;
+	max-width: 500px;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.yt-cpsm-list {
+	flex: 2;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.yt-cpsm-color-box {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+/* Post List Row Colors */
+.wp-list-table tbody tr[data-status-color] {
+	border-left: 4px solid transparent;
+	transition: border-color 0.2s ease;
+}
+
+.wp-list-table tbody tr[data-status-color]:hover {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+	.yt-cpsm-container {
+		flex-direction: column;
+	}
+
+	.yt-cpsm-form {
+		max-width: 100%;
+	}
+}
