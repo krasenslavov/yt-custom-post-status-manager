@@ -12,30 +12,30 @@
 }
 
 .yt-cpsm-form {
-	flex: 1;
-	max-width: 500px;
 	background: #fff;
-	padding: 20px;
 	border: 1px solid #ccd0d4;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	flex: 1;
+	max-width: 500px;
+	padding: 20px;
 }
 
 .yt-cpsm-list {
-	flex: 2;
 	background: #fff;
-	padding: 20px;
 	border: 1px solid #ccd0d4;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	flex: 2;
+	padding: 20px;
 }
 
 .yt-cpsm-color-box {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
 	border: 1px solid #ddd;
 	border-radius: 3px;
-	vertical-align: middle;
+	display: inline-block;
+	height: 20px;
 	margin-right: 5px;
+	vertical-align: middle;
+	width: 20px;
 }
 
 /* Post List Row Colors */

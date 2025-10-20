@@ -3,7 +3,7 @@
  * Plugin Name: YT Custom Post Status Manager
  * Plugin URI: https://github.com/krasenslavov/yt-custom-post-status-manager
  * Description: Add and manage custom post statuses with color-coded admin interface.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: Krasen Slavov
@@ -136,8 +136,8 @@ class YT_Custom_Post_Status_Manager {
 	 */
 	public function enqueue_admin_scripts( $hook ) {
 		if ( 'edit.php' === $hook || 'post.php' === $hook || 'post-new.php' === $hook ) {
-			wp_enqueue_style( 'yt-cpsm-admin', YT_CPSM_URL . 'assets/css/admin.css', array(), YT_CPSM_VERSION );
-			wp_enqueue_script( 'yt-cpsm-admin', YT_CPSM_URL . 'assets/js/admin.js', array( 'jquery' ), YT_CPSM_VERSION, true );
+			wp_enqueue_style( 'yt-cpsm-admin', YT_CPSM_URL . 'assets/css/yt-custom-post-status-manager.css', array(), YT_CPSM_VERSION );
+			wp_enqueue_script( 'yt-cpsm-admin', YT_CPSM_URL . 'assets/js/yt-custom-post-status-manager.js', array( 'jquery' ), YT_CPSM_VERSION, true );
 			wp_localize_script( 'yt-cpsm-admin', 'ytCpsmData', array( 'statuses' => $this->get_statuses_for_js() ) );
 		}
 	}
